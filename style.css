@@ -28,11 +28,17 @@ footer {
   align-items: center;
 }
 footer a {
-  margin-left: 60%;
+  font-size: 1rem;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
   text-decoration: inherit;
   color: inherit;
+  text-align: right;
 }
 footer p {
+  display: flex;
+  font-size: 1rem;
   margin-left: 2%;
 }
 
@@ -94,8 +100,19 @@ nav {
   color: hsl(204 0% 100% / 1);
 
   & h1 {
-    margin: auto;
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0;
   }
+}
+
+nav img {
+  height: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: 2%;
 }
 
 .navMenu {
@@ -107,10 +124,15 @@ nav {
 
   & > li {
     font-size: 1.7rem;
-    text-decoration: none;
+    text-decoration: inherit;
     display: inline-block;
     margin: 20px;
   }
+}
+
+.navMenu a {
+  text-decoration: inherit;
+  color: inherit;
 }
 
 header {
@@ -204,10 +226,43 @@ header h2 {
 
 /* sect2 */
 .sect2 {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   background-color: hsla(9, 40%, 55%, 1);
-  margin: 0vh 5vh;
+  margin: auto 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3%;
+  border-radius: 25px;
+  width: 60%;
+  color: white;
+}
+
+.sect2 a {
+  background: hsl(240, 60%, 70%);
+  color: white;
+  align-items: center;
+}
+.imgSect2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sect2 h2 {
+  font-size: 2.5rem;
+}
+
+.sect2 h3 {
+  font-size: 1.8rem;
+}
+.sect2 img {
+  width: 50%;
+}
+
+.sect2 p {
+  font-size: 1.5rem;
 }
 /* end of sect2 */
 
@@ -309,6 +364,11 @@ header h2 {
     width: 70%;
     height: 70%;
   }
+
+  /* footer a {
+    font-size: 0.7rem;
+    margin-left: 30%;
+  } */
 }
 
 @media only screen and (min-width: 1023px) {

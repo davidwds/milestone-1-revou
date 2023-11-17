@@ -21,7 +21,7 @@
   <body>
     <div>
       <nav class="navbar">
-        <span class="hamMenu">
+        <span onclick="openNav()" class="hamMenu">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="1em"
@@ -38,11 +38,15 @@
             />
           </svg>
         </span>
+        <img
+          src="Assets/Images/Icon_dropwatergames_16x16px.webp"
+          alt="Drop Water Games Logo"
+        />
         <h1>Drop Water Games</h1>
         <ul class="navMenu">
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Download</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#aboutUs">About Us.</a></li>
+          <li><a href="#downloadGame">Download</a></li>
         </ul>
       </nav>
     </div>
@@ -54,8 +58,8 @@
       >&times;</a
     >
     <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Contact Us!</a>
+    <a href="#aboutUs">About Us.</a>
+    <a href="#downloadGame">Download</a>
   </div>
   <!-- end of hamburger menu  -->
 
@@ -70,7 +74,7 @@
     </section>
   </header>
   <main>
-    <section class="sect1">
+    <section id="aboutUs" class="sect1">
       <h2>What we do?</h2>
       <ul>
         <li>
@@ -101,11 +105,15 @@
         </li>
       </ul>
     </section>
-    <sec class="sect2">
+    <sec id="downloadGame" class="sect2">
       <h2>Meet Our Games!</h2>
       <h3>Nandak Jakarte</h3>
       <div class="imgSect2">
-        <img src="" alt="" />
+        <img
+          src="Assets/Images/Logo_game_Nandak_Jakarte_500x500.webp"
+          alt="Logo Game Nandak Jakarta"
+        />
+        <a href="bit.ly/NandakJakarte">Download here</a>
         <p>Nandak Jakarte is an ondel-ondel game</p>
       </div>
     </sec>
@@ -148,9 +156,12 @@
       </ul>
     </sec>
   </main>
+  <script src="script.js"></script>
 
   <footer>
     <p>Drop Water Games.</p>
-    <a href="https://www.instagram.com/dropwatergames">Instagram</a>
+    <a href="https://www.instagram.com/dropwatergames"
+      >Sent us a message! <br />Click Here!</a
+    >
   </footer>
 </html>
